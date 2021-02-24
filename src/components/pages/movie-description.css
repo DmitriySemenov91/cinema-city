@@ -1,0 +1,41 @@
+.pic-sizer {
+  object-fit: cover;
+}
+
+.spacer {
+  margin-bottom: 0.5em;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 690px) {
+  .flex-container {
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    justify-content: center;
+  }
+  .pic-container {
+    flex-grow: 1;
+  }
+  .pic-sizer {
+    min-width: 100%;
+  }
+}
+.notif {
+  padding: 2rem;
+  text-align: center;
+}
+.blank {
+  min-width: "342px";
+  min-height: "513px";
+}
+.spinnerContainer {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+}
